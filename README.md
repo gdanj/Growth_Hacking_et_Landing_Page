@@ -77,29 +77,25 @@ ultimate_townhall
 
 <h3> How it works? </h3>
 
-<p>Nous avons récupérés les adresses mails et twitter sur le site suivant :</p> <a href="http://www.annuaire-des-mairies.com/
-"><code>clic</code></a>
-<p>
+<h4> Un service Instagram </h4>
 
-Les gems suivants nous ont été d'une utilité pour scrapper les adresses emails des villes des départements du 04, 85 et 91:
+Tu verras mon p'tit mouss que le site dispose d'un service relié à l'API Instagram.
+Il n'y avait pas de gems encore maintenues suite aux grosses restrictions d'accés aux données de la société. Nous avons donc utilisé la `gem httparty` pour les requêtes.
+Ca te permet de revoir une authentification OAuth en action sur Rails.
 
-`GEM ‘Nokogiri'`<br/>
-`GEM ‘Rubygems’`<br/>
-`GEM ‘Open-uri’`
+ 1. On fait une redirection vers les serveurs d'Instagram pour obtenir un token d'un utilisateur Instagram
+ 2. Avec ce token, on peut effectuer des requêtes de l'utilisateur sur l'API depuis notre application
 
-A partir de cela nous avons créés un fichier Json qui contient toutes les informations (nom de la ville, adresse mail et handèle twitter)<br/>
-`GEM ‘json’`<br/>
-`GEM ‘csv’`
+<sub>Malheureusement, Instagram a restreint son API...</sub>
+Avec notre application enregistrée que très peu sur Instagram, nous n'avons que les droits sandbox. On ne peut pas effectuer de recherche sous l'ID de l'utilisateur. Pour ca il faut se faire "approuved".
+Tu pourras tout de même apprécier l'usage de 2 requêtes pour afficher :
 
-Ensuite nous avons mis en place un envoie de mail vers toutes les communes des départements sélectionnés.
-Nous avons utilisé le gem suivant:
+ - Les infos publiques de l'utilisateur
+ - Le nombre de medias, followers, following.
 
-`GEM ‘Mail’`
+On aurait aimé pouvoir régulièrement consulter des tags , et envoyer aux comptes les utilisants un petit MP contenant l'url de notre site. L'authentification est montée, il n'y qu'à implémenter des requêtes.
 
-On a créés un bot twitter pour envoyer un tweet à l'aide du gem:
 
-`GEM ‘Twitter’`
-</p>
 
 <h5>Enjoy the game!</h5>
 
