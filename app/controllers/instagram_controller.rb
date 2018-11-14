@@ -16,7 +16,6 @@ class InstagramController < ApplicationController
     #we need one more information with an other request
     user_self = get_user_self(@token)
     @count = user_self.parsed_response["data"]["counts"]
-
   end
 
   private
