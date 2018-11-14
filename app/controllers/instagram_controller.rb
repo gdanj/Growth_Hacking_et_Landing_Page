@@ -9,12 +9,22 @@ class InstagramController < ApplicationController
   def callback
     # we received a code from instagram API in this controller
     # now we request access_token
-    token = get_token(params[:code])
-    p token
+    basic_response = get_token(params[:code])
+    @token = basic_response.parsed_response["access_token"] # a string
+    @user = basic_response.parsed_response["user"] # a hash
+
+    #we need one more information with an other request
+    user_self = get_user_self(@token)
+    @count = user_self.parsed_response["data"]["counts"]
+
   end
 
   private
 
+  def get_user_self(token)
+    url = "https://api.instagram.com/v1/users/self/?access_token=#{@token}"
+    my_get = HTTParty.get(url)
+  end
   def get_token(my_code)
     url = "https://api.instagram.com/oauth/access_token"
     body = {
