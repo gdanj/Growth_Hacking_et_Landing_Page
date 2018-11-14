@@ -1,19 +1,18 @@
 # ![CI status](http://oi68.tinypic.com/ngf2uo.jpg)    
 #  The Hacking Project
 <br/>
-<h2>Semaine 7 - Jeudi ......</h2>
+<h2>Semaine 7 - :coffee: Thursday 15th November : :coffee:</h2>
 
 <body>
 
 <h1>Introduction</h1>
 
 <h5>
- Étapes à suivre:
+ Step to follow:
  </h5>
 <ol>
- <li>Faites un git clone: <code>git clone https://github.com/mothinx/spammer_saphyr.git</code></li>
- <li>Installez nos gems: <code>bundle install</code></li>
- <li>Faites un `.env` de vos clés comme ci-dessous: <code>touch .env</code></li>
+ <li>You can acess to our web-site through this link: <code>XXXXXX</code></li>
+ <li>You can either to a test on local <code>http://localhost:3000/</code></li>
 
 </ol>
 
@@ -28,18 +27,18 @@ TWITTER_ACCESS_SECRET = "YOUR ACCES SECRET"
 
   <h2>Team</h2>
 
- <p>Hey guys ! Nous sommes La Team SaphyR, composée de : </p>
+ <p>Hey guys ! We are The SaphyR Team made of : </p>
 <ul>
-<li>Julien aka Mothinx <a href="https://github.com/mothinx"><code>clic</code></a><br/></li>
-<li>Camilo aka Rumkox <a href="https://github.com/rumkox"><code>clic</code></a><br/></li>
-<li>Christine aka Zybouric <a href="https://github.com/Zybouric"><code>clic</code></a><br/></li>
-<li>Dan aka Gdanj <a href="https://github.com/gdanj"><code>clic</code></a><br/></li>
-<li>Asvinie aka Asvinie057 <a href="https://github.com/asvinie057"><code>clic</code></a><br/></li>
-<li>Antoine aka Tonoutt  <a href="https://github.com/tonoutt"><code>clic</code></a><br/></li>
-<li>Kathleen aka Funkykath <a href="https://github.com/Funkykath"><code>clic</code></a><br/></li>
+<li>Julien aka Mothinx :soccer:<a href="https://github.com/mothinx"><code>clic</code></a><br/></li>
+<li>Camilo aka Rumkox :sake:<a href="https://github.com/rumkox"><code>clic</code></a><br/></li>
+<li>Christine aka Zybouric :beer:<a href="https://github.com/Zybouric"><code>clic</code></a><br/></li>
+<li>Dan aka Gdanj :pizza:<a href="https://github.com/gdanj"><code>clic</code></a><br/></li>
+<li>Asvinie aka Asvinie057 :curry:<a href="https://github.com/asvinie057"><code>clic</code></a><br/></li>
+<li>Antoine aka Tonoutt  :bento:<a href="https://github.com/tonoutt"><code>clic</code></a><br/></li>
+<li>Kathleen aka Funkykath :poultry_leg:<a href="https://github.com/Funkykath"><code>clic</code></a><br/></li>
 </ul>
 <p>
-Grace à notre programme vous allez pouvoir envoyer un mail et un tweet à toutes les communes d’un département pour les prévenir de votre présence.
+Thanks to our help you'll be able to make your business growing-up.
  </p>
 
 
@@ -106,4 +105,4 @@ On a créés un bot twitter pour envoyer un tweet à l'aide du gem:
 
 </body>
 
-# TEAM Saphyr
+# TEAM SaphyR
