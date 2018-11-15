@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'suscribers/index'
   get 'instagram/auth', to: "instagram#auth"
   get 'instagram/callback', to: "instagram#callback"
   get '/', to: "home#index"

@@ -1,0 +1,8 @@
+<h1>Sing up to our newsletter!</h1>
+<%= form_for @suscriber do |f|  %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.email_field :email, placeholder: "Email" %>
+  <%= f.select :source, ["Google", "Instagram", "Word of Mouth", "Other"],
+              prompt: "How did you hear about us?"%>
+  <%= f.submit %>
+<% end %>
