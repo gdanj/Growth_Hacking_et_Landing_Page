@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Welcome to your instagram dahsboard <%= @user["username"] %> !</h2>
+  <%= image_tag "#{@user['profile_picture']}" %>
+  <ul>
+    <li>Your name: <%= @user["full_name"] %></li>
+    <li>Bio: <%= @user["bio"] %></li>
+    <li>Website: <%= @user["website"] %></li>
+    <ul>
+      <li>Media: <%= @count["media"] %></li>
+      <li>Follow: <%= @count["follow"] %></li>
+      <li>Followed_by: <%= @count["followed_by"] %></li>
+    </ul>
+  </ul>
+</div>
